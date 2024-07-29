@@ -15,6 +15,9 @@ namespace DomainNoIndex.Controllers
 
         public IActionResult Index()
         {
+            // Set the status code to 404
+            HttpContext.Response.StatusCode = 404;
+
             return View();
         }
 
